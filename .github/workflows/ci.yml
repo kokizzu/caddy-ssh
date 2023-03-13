@@ -89,7 +89,7 @@ jobs:
         CGO_ENABLED: 0
       run: |
         go install -v github.com/caddyserver/xcaddy/cmd/xcaddy@latest
-        $(go env GOPATH)/bin/xcaddy build --with github.com/mohammed90/caddy-ssh=. --output caddy-ssh
+        $(go env GOPATH)/bin/xcaddy build --with github.com/kadeessh/kadeessh=. --output caddy-ssh
 
     - name: Publish Build Artifact
       uses: actions/upload-artifact@v1
